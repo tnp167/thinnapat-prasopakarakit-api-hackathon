@@ -1,24 +1,20 @@
 const baseUrl = 'https://api.tfl.gov.uk/line/mode/tube/status'
 
+const table = document.querySelector(".main__table");
+
 const getlines = async() => {
     try{
         const response = await axios.get(baseUrl);
-        return response.data;
+        renderLines(response.data);
     }
     catch(error){
         console.log(error);
     }
-}
+} 
 
-const table = document.querySelector(".main__table");
-const lines = getlines()
-    .then((line) => {
-        renderLines(line);
-        const intervalId = setInterval(() =>  renderLines(line), 5000);
-      })
-    .catch((error) => {
-        console.error("Error fetching comments:", error);
-      });;
+getlines();
+
+const intervalId = setInterval(() => getlines(), 5000);
 
 const displayLines = (line) =>{
 
@@ -69,7 +65,6 @@ const displayLines = (line) =>{
 }
 
 const renderLines = (lines) => {
-    console.log(lines);
     table.innerHTML = ""; 
     const update = document.createElement("h3");
     update.classList.add("main__update");
