@@ -4,16 +4,29 @@
 
 .main {
     &__bio{
-    height: 15rem;
-    background-image: url('../assets/images/map.gif');
-    background-size: cover; 
-    background-position: center; 
-    background-position: 0% 55%;
+        height: 15rem;
+        background-image: url('../assets/images/map.gif');
+        background-size: cover; 
+        background-position: center; 
+        background-position: 0% 55%;
 }
 
-    &__sub-nav{
+    &__sub-bio{
         height: 3rem;
         background-color: rgb(2, 102, 217);
+        display: flex;
+    }
+
+    &__title{
+        margin: auto;
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.8rem;
+        justify-content: center;
+        margin-top: 0.7rem;
+    }
+    &__update{
+        text-align: center;
     }
 
     &__container{
@@ -33,6 +46,7 @@
         border-top: 3px solid white;
         border-bottom: 3px solid white;
         border-right: 2px solid white;
+        text-align: center;
         &--piccadilly,
         &--metropolitan,
         &--northern{
@@ -53,6 +67,39 @@
         }
         &--delay{
             background-color: orange;
+            position: relative;
         }
+    }
+    
+    &__popup{
+        position: absolute;
+        display: none;
+        &--active{
+            width: 20rem;
+            display: flex;
+            background-color: rgb(255, 214, 157);
+            padding: 2rem;
+            border-radius: 5px;
+            left: 15%;
+            top:70%;
+            z-index: 2;
+        }
+    }
+
+    &__icon{
+        padding: 0rem 1rem;
+        flex-wrap: wrap;
+        background-color: red;
+        width: 7rem;
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    &__con{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
