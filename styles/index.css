@@ -15,6 +15,50 @@ body {
   padding: 0px;
 }
 
+.main__name--bakerloo {
+  background-color: #B26300;
+}
+
+.main__name--central {
+  background-color: #DC241F;
+}
+
+.main__name--circle {
+  background-color: #FFC80A;
+}
+
+.main__name--district {
+  background-color: #007D32;
+}
+
+.main__name--hammersmith-city {
+  background-color: #F589A6;
+}
+
+.main__name--jubilee {
+  background-color: #A0A5A9;
+}
+
+.main__name--metropolitan {
+  background-color: #9B0058;
+}
+
+.main__name--northern {
+  background-color: #000000;
+}
+
+.main__name--piccadilly {
+  background-color: #0019A8;
+}
+
+.main__name--victoria {
+  background-color: #039BE5;
+}
+
+.main__name--waterloo-city {
+  background-color: #76D0BD;
+}
+
 .header {
   width: 100%;
   height: 4rem;
@@ -54,4 +98,39 @@ body {
 .main__sub-nav {
   height: 3rem;
   background-color: rgb(2, 102, 217);
+}
+.main__container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.main__table {
+  margin-top: 2rem;
+}
+.main__name {
+  margin: 0;
+  padding: 1rem 0;
+  width: 60%;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  border-right: 2px solid white;
+}
+.main__name--piccadilly, .main__name--metropolitan, .main__name--northern {
+  color: white;
+}
+.main__status {
+  width: 40%;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  border-left: 2px solid white;
+}
+.main__status--good {
+  background-color: green;
+}
+.main__status--delay {
+  background-color: orange;
 }/*# sourceMappingURL=index.css.map */

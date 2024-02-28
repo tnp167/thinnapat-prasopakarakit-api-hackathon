@@ -1,0 +1,20 @@
+$colors: (
+    bakerloo: #B26300,
+    central: #DC241F,
+    circle: #FFC80A,
+    district: #007D32,
+    hammersmith-city: #F589A6,
+    jubilee: #A0A5A9,
+    metropolitan: #9B0058,
+    northern: #000000,
+    piccadilly: #0019A8,
+    victoria: #039BE5,
+    waterloo-city: #76D0BD
+);
+
+@each $line, $color in $colors {
+    .main__name--#{$line} {
+      background-color: $color;
+    }
+}
+  
