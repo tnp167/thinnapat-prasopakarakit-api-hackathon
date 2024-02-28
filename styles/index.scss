@@ -1,0 +1,17 @@
+@use './partials/global' as *;
+@use './partials/header';
+
+.main {
+    &__bio{
+    height: 15rem;
+    background-image: url('../assets/images/map.gif');
+    background-size: cover; 
+    background-position: center; 
+    background-position: 0% 55%;
+}
+
+    &__sub-nav{
+        height: 3rem;
+        background-color: rgb(2, 102, 217);
+    }
+}

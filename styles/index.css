@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Johnston";
+  src: url("../../assets/fonts/Johnston.ttf");
+  font-weight: 400;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Johnston";
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+}
+.header__container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: rgb(13, 0, 154);
+  height: 100%;
+}
+.header__logo {
+  padding: 0.8rem;
+  height: 2.5rem;
+  display: flex;
+}
+.header__logo img {
+  margin: 0;
+  padding: 0;
+}
+.header__description {
+  text-transform: uppercase;
+  color: white;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.main__bio {
+  height: 15rem;
+  background-image: url("../assets/images/map.gif");
+  background-size: cover;
+  background-position: center;
+  background-position: 0% 55%;
+}
+.main__sub-nav {
+  height: 3rem;
+  background-color: rgb(2, 102, 217);
+}/*# sourceMappingURL=index.css.map */

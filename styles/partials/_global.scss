@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Johnston";
+    src: url("../../assets/fonts/Johnston.ttf");
+    font-weight: 400;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Johnston";
+    margin: 0px;
+    padding: 0px;
+}
